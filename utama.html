@@ -79,19 +79,19 @@
             <p><?php echo $p; ?></p>
             <?php
               if ($s==0 and $b==1) {
-                echo "<a href='utama.php?s=1&&b=2' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>"; 
+                echo "<a href='utama.html?s=1&&b=2' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>"; 
               }elseif ($s==1 and $b==2) {
                 $s=$s-1;
-                echo '<a href="utama.php?s=0&&b=1" class="btn btn-danger" id="b-kiri" disabled>BALIK</a>';                
-                echo "<a href='utama.php?s=1&&b=3' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>";     
+                echo '<a href="utama.html?s=0&&b=1" class="btn btn-danger" id="b-kiri" disabled>BALIK</a>';                
+                echo "<a href='utama.html?s=1&&b=3' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>";     
               }elseif ($s==1 and $b==3) {
                 $s=$s-1;
-                echo '<a href="utama.php?s=1&&b=2" class="btn btn-danger" id="b-kiri" disabled>BALIK</a>';                
-                echo "<a href='utama.php?s=1&&b=4' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>";     
+                echo '<a href="utama.html?s=1&&b=2" class="btn btn-danger" id="b-kiri" disabled>BALIK</a>';                
+                echo "<a href='utama.html?s=1&&b=4' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>";     
               }elseif ($s==1 and $b==4) {
                 $s=$s-1;
-                echo '<a href="utama.php?s=1&&b=3" class="btn btn-danger" id="b-kiri" disabled>BALIK</a>';                
-                // echo "<a href='utama.php?s=1&&b=4' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>";     
+                echo '<a href="utama.html?s=1&&b=3" class="btn btn-danger" id="b-kiri" disabled>BALIK</a>';                
+                // echo "<a href='utama.html?s=1&&b=4' class='btn btn-success' id='b-kanan' disabled>LANJUT</a>";     
               }
             ?>                        
           </div>

